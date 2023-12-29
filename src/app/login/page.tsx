@@ -44,7 +44,7 @@ export default function LogIn() {
           setLoading(true);
           const res = await axios.post("/api/users/login", user);
           console.log("Login Successful", res.data);
-          router.push("/profile");
+          router.push("/");
         } catch (error: any) {
           setError(true);
           console.log(error.message);
@@ -79,7 +79,7 @@ export default function LogIn() {
         <div>
           <div className="mt-[20px]">
             <input
-              type="tel"
+              type="email"
               placeholder="Email"
               className={inputClasses}
               value={user.email}
