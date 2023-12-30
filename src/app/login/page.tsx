@@ -92,7 +92,7 @@ export default function LogIn() {
           <div className="mt-[20px]">
             <input
               type="password"
-              placeholder="Passsword"
+              placeholder="Password"
               className={inputClasses}
               value={user.password}
               onChange={(e) => setUser({ ...user, password: e.target.value })}

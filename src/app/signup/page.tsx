@@ -9,7 +9,7 @@ import LoginModal from "@/components/LoginModal";
 export default function SignupPage() {
   const router = useRouter();
 
-  const inputClasses= "text-[14px] sm:text-base lg:text-[20px] font-medium h-[50px] p-[10px] border-[1px] mt-[8px] w-full sm:h-[60px] shadow-xl outline-primary-red rounded-[5px]"
+  const inputClasses= "text-[14px] sm:text-base lg:text-[20px] font-medium h-[50px] p-[10px] border-[1px] mt-[8px] w-full sm:h-[60px] shadow-xl outline-none rounded-[5px]"
 
   const [user, setUser] = useState({
     username: "",

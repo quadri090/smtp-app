@@ -12,9 +12,9 @@ export function middleware(request: NextRequest) {
         return NextResponse.redirect(new URL('/welcometosmtp', request.nextUrl))
     }
 
-    // if (token && !isPrivatePath) {
-    //     return NextResponse.redirect(new URL('/', request.nextUrl))
-    // }
+    if (token && !isPrivatePath) {
+        return NextResponse.redirect(new URL('/', request.nextUrl))
+    }
 
     return
 }
